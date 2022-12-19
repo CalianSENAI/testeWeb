@@ -6,6 +6,7 @@
 body{
     height: 100vh;
     width: 100vw;
+    margin: 0px;
 }
 
 .navbar{
@@ -42,27 +43,82 @@ body{
     height: 40px;
 }
 
-.divColunas{
-    border: 2px solid black;
-}
-
 .colunas{
-    border: 10px solid black;
     display: flex;
     height: 100%;
+    gap: 1rem;
 }
 
 .coluna1{
-    flex-grow: 1;
+    /*flex-grow: 1;*/
+    flex-basis: 25%;
     border: 2px solid black;
     margin: 10px;
-    
+    margin-top: 100px;
+    height: 550px;
 }
 
 .coluna2{
     flex-grow: 3;
     margin: 10px;
+    margin-top: 100px;
     border: 2px solid black;
+    height: 550px;
 }
 
+.navbar li::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
 
+.navbar li:hover::after{
+    width: 100%;
+}
+
+.navbar li:hover:nth-child(5){
+    background-color: rgb(34, 34, 34);
+}
+
+.navbar li:nth-child(5)::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    transition: width .3s;
+}
+
+.navbar li:nth-child(5):hover::after{
+    width: 100%;
+}
+
+.galery{
+    display: flex;
+    border: 0px solid yellow;
+    margin: 0px;
+    flex-wrap: wrap;
+    gap: .8rem;
+    width: 100vw;
+    height: 100vh;
+    padding: 10px;
+    justify-content: center;
+}
+
+.galery img{
+    width: 500px;
+    height: 500px;
+}
+
+footer{
+    display: flexbox;
+    align-self: baseline;
+    height: 8rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    background-color: rgb(255, 242, 184);
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - HTML/CSS/JS</title>
+
+    <style>
+        .active{
+            color: blue;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1 id="blog-title">Meu Blog</h1>
+    </header>
+    <h1 class="one" >Meu Blog1</h1>
+
+    <p class="teste">Teste</p>
+    <p id="labelNome">Insira seu nome:</p>
+    <input type="text" id="nome" placeholder="Insira seu nome">
+
+    <p id="labelMudar">Input teste para mudar de cor:</p>
+    <input type="text" id="teste" placeholder="Insira 'Calian' para mudar de cor" size="25">
+    <button type="submit" onclick="testeBt(teste)" >ENVIAR</button>
+
+    <div>
+        <h2>Eventos de Teclado</h2>
+        <h3>Input e enter</h3>
+        <input id="inputKey" class="keyInput" type="text" placeholder="Insira qualquer valor e tecle 'enter'" size="30">
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
