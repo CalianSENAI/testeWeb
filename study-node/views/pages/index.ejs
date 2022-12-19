@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('../partials/head'); %>
+
+<body style="height: 100vh; width: 100vw;">
+    <main>
+        <%- include('../partials/header'); %>
+        <div class="jumbotron" style="justify-content: center; align-items: center;">
+            <h1>Node com EJS</h1>
+            <p>Vamos aprender a trablhar com arquivos EJS</p>
+            <a href="/about"><button style="height: 50px; border: 1px solid black; background-color: blueviolet; color: white;">Sobre Mim</button></a>
+        </div>
+        <ul>
+            <% qualitys.forEach(function(a){ %>
+                <li>
+                    <strong><%= a.tittle %></strong> a.message
+                </li>
+            <% })%>
+            <% qualitys.forEach(function(a){ %>
+                <li>
+                    <strong><%= a.tittle %></strong> a.message
+                </li>
+            <% })%>
+            <% qualitys.forEach(function(a){ %>
+                <li>
+                    <strong><%= a.tittle %></strong> a.message
+                </li>
+            <% })%>
+            <% qualitys.forEach(function(a){ %>
+                <li>
+                    <strong><%= a.tittle %></strong> a.message
+                </li>
+            <% })%>
+            <% qualitys.forEach(function(a){ %>
+                <li>
+                    <strong><%= a.tittle %></strong> a.message
+                </li>
+            <% })%>
+        </ul>
+    </main>
+    <%- include('../partials/footer'); %>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
